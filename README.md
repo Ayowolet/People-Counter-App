@@ -55,7 +55,7 @@ python /opt/intel/openvino/deployment_tools/model_optimizer/mo_tf.py --input_mod
 
 Clone this repo and create a "files" directory
 
-Copy the generated .xml and .bin file into the "model" directory
+Copy the generated .xml and .bin file into the "files" directory
 
 ### Install Intel® Distribution of OpenVINO™ toolkit
 
