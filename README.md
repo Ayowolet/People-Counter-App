@@ -39,7 +39,7 @@ You will choose a model to use and convert it with the Model Optimizer.
 
 ### Extracting the model
 
-First, download the ssd_mobilenet_v2_coco model (http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz)
+First, download the [ssd_mobilenet_v2_coco model](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz)
 
 From command line/terminal, navigate to the directory where the model was downloaded and extract it using
 
