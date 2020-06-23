@@ -16,11 +16,11 @@ The unsupported layers have to first be identified using query_network on the IE
 
 My methods to compare models before and after conversion to Intermediate Representations were using the time and inference size of the model before and after conversion.
 
-The difference between model accuracy pre- and post-conversion was...
+**Accuracy**: There wasn't a noticable difference in the accuracy of the model pre and post conversion.
 
-The size of the model pre- conversion was 70mb and post-conversion was 68mb
+**Size**: The size of the model pre- conversion was 70mb and post-conversion was 68mb
 
-The inference time of the model pre-conversion was on average 180.8ms and post-conversion on average was 80ms.
+**Time**: The inference time of the model pre-conversion was on average 180.8ms and post-conversion on average was 80ms.
 
 ## Assess Model Use Cases
 
