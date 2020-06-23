@@ -6,6 +6,22 @@ This problem has been captured and solved by the OpenVino toolkit in that differ
 
 In this project, a tensorflow object detection model will be used on the OpenVino toolkit on an Intel run CPU.
 
+## Setup
+
+### Extracting the model
+
+First, download the ssd_mobilenet_v2_coco model
+
+From command line/terminal, navigate to the directory where the model was downloaded and extract it using
+
+tar -xvf ssd_mobilenet_v2_coco_2018_03_29.tar.gz
+Go to the just extracted directory (ssd_mobilenet_v2_coco_2018_03_29) and generate the intermediate represention (IR) files i.e.(.xml and .bin) using the model optimizer by running the following
+
+python /opt/intel/openvino/deployment_tools/model_optimizer/mo_tf.py --input_model frozen_inference_graph.pb --tensorflow_object_detection_api_pipeline_config pipeline.config --tensorflow_use_custom_operations_config /opt/intel/openvino/deployment_tools/model_optimizer/extensions/front/tf/ssd_v2_support.json --reverse_input_channel
+
+Clone this repo and create a "files" directory
+
+Copy the generated .xml and .bin file into the "model" directory
 
 ## Explaining Custom Layers
 
